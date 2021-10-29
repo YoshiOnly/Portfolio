@@ -1,0 +1,235 @@
+/* Palette */
+/* Typo */
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}
+
+.primary {
+  color: #053C5E;
+}
+
+/* base */
+html, body {
+  position: relative;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.header {
+  background-color: #BFDBF7 !important;
+  min-height: 200px;
+  color: #053C5E !important;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.footer {
+  background-color: #BFDBF7 !important;
+  min-height: 200px;
+  color: #053C5E !important;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+.main {
+  background-color: #053C5E;
+  min-height: 1000px;
+  color: white;
+  text-align: center;
+}
+
+.fa {
+  font-size: 32px;
+}
+
+.card-body {
+  background-color: #BFDBF7;
+  color: #053C5E;
+}
+
+.card {
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: #BFDBF7;
+}
+.card:hover .cardDescription {
+  display: inline-block;
+}
+.card:hover #cardImage {
+  height: 200px;
+}
+
+.cardName {
+  font-weight: bold;
+}
+
+.cardDescription {
+  display: none;
+  width: 100%;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.profilpic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+}
+
+a {
+  color: unset;
+}
+a:hover {
+  color: #A31621 !important;
+}
+
+.site-navigation {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h1 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* bootstrap card */
+.small-card {
+  width: 99%;
+  min-width: 200px;
+  margin: 0.5%;
+}
+@media screen and (min-width: 1000px) {
+  .small-card {
+    width: 24%;
+  }
+}
+.small-card #cardImage {
+  height: 350px;
+}
+
+.liste {
+  display: inline-block;
+  position: initial;
+}
+.liste:hover .subListe {
+  display: none;
+  width: 150px;
+  position: relative;
+  bottom: auto;
+  right: 30px;
+}
+
+.subListe {
+  display: none;
+}
+
+/* Animation */
+@keyframes btnAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+/* swipper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Update: Removed the Flex property - IE FIX */
+}
+
+.netflix-slider .swiper-wrapper {
+  padding: 20px 0;
+  overflow: visible;
+}
+.netflix-slider .swiper-slide {
+  transition: 250ms all;
+}
+.netflix-slider .swiper-slide:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.netflix-slider .swiper-slide:first-child:hover {
+  margin: 0 40px;
+}
+.netflix-slider .swiper-slide:last-child:hover {
+  margin: 0 -40px;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: column;
+  grid-gap: 35px;
+}
+
+.sliderCase {
+  min-width: 250px !important;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+#rightSliderButton {
+  color: #A31621;
+  position: sticky;
+  left: 97%;
+  bottom: 40%;
+}
+
+#leftSliderButton {
+  color: #A31621;
+  position: sticky;
+  left: 1%;
+  bottom: 40%;
+}
+
+/*# sourceMappingURL=style.css.map */
