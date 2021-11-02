@@ -9,7 +9,11 @@
 }
 
 .primary {
-  color: #053C5E;
+  color: #0b1f46;
+}
+
+#mainDescription {
+  font-size: 18px;
 }
 
 /* base */
@@ -21,30 +25,31 @@ html, body {
 }
 
 h1, h2, h3 {
-  font-family: "Hammersmith One", sans-serif;
+  font-family: "Satisfy", cursive;
 }
 
 .header {
   background-color: #BFDBF7 !important;
-  min-height: 200px;
-  color: #053C5E !important;
+  min-height: 140px;
+  color: #0b1f46 !important;
   font-family: "Hammersmith One", sans-serif;
 }
 
 .footer {
   background-color: #BFDBF7 !important;
   min-height: 200px;
-  color: #053C5E !important;
+  color: #0b1f46 !important;
   padding-top: 25px;
   padding-bottom: 25px;
   font-family: "Hammersmith One", sans-serif;
 }
 
 .main {
-  background-color: #053C5E;
+  background-color: #0b1f46;
   min-height: 1000px;
   color: white;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .fa {
@@ -53,7 +58,7 @@ h1, h2, h3 {
 
 .card-body {
   background-color: #BFDBF7;
-  color: #053C5E;
+  color: #0b1f46;
 }
 
 .card {
@@ -61,6 +66,7 @@ h1, h2, h3 {
   height: 100%;
   width: 100%;
   background-color: #BFDBF7;
+  border: solid;
 }
 .card:hover .cardDescription {
   display: inline-block;
@@ -71,11 +77,15 @@ h1, h2, h3 {
 
 .cardName {
   font-weight: bold;
+  font-family: "Satisfy", cursive;
+  font-size: 22px;
 }
 
 .cardDescription {
   display: none;
   width: 100%;
+  text-justify: auto;
+  font-size: 16px;
 }
 
 .card-img-top {
@@ -89,6 +99,7 @@ h1, h2, h3 {
   margin: auto;
   object-fit: cover;
   margin-top: 30px;
+  border: solid;
 }
 
 .navbar {
@@ -230,6 +241,62 @@ h2 {
   position: sticky;
   left: 1%;
   bottom: 40%;
+}
+
+#englishButton {
+  position: relative;
+}
+
+#frenchButton {
+  position: relative;
+}
+
+.languageSelection {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  top: -24px;
+}
+
+.button {
+  background-color: transparent;
+  border-color: transparent;
+}
+.button:hover {
+  animation-name: btnAnimation;
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+.countryFlag {
+  transform: scale(1.5);
+}
+
+#laChouetteAgence:hover {
+  left: 5%;
+}
+
+#null {
+  color: transparent;
+  background-color: transparent;
+}
+#null .card, #null .card-img-top, #null .card-body {
+  color: transparent;
+  background-color: transparent;
+}
+
+#etude {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#bienvenue {
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

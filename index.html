@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@200;500&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@500;600&family=Satisfy&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" media="screen" type="text/css" href="./CSS/style.css">
 
 
@@ -29,9 +31,11 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="./Images/JrawpixelPNGcompressed.png" width="200" height="100" alt="Site logo">
             </a>
+
+
             <ul class="site-navigation nav navbar-nav">
                 <li class="liste">
-                    <a href="#etude">Mes projets d'études</a>
+                    <a href="#etude" id="projetEtudes">Projets d'études</a>
                     <ul class="subListe">
                         <li>Reservia</li>
                         <li>Orinoco</li>
@@ -42,7 +46,7 @@
                 </li>
 
                 <li class="liste">
-                    <a href="#perso">Mes projets perso</a>
+                    <a href="#perso" id="projetPerso">Projets personnels</a>
                     <ul class="subListe">
                         <a href="noiroroo">
                             <li>Noiroroo</li>
@@ -54,12 +58,20 @@
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
+
+                <div class="languageSelection">
+                    <button id="englishButton" class="button"> <img
+                            src="./Images/united-states-of-america-flag-icon-16.png" class="countryFlag"
+                            alt="englishLanguageSelection"> EN</button>
+                    <button id="frenchButton" class="button"> <img src="./Images/france-flag-icon-16.png"
+                            class="countryFlag" alt="frenchLanguageSelection"> FR</button>
+                </div>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <h1>Bienvenue</h1>
+        <h1 id="bienvenue">Bienvenue</h1>
 
         <section class="container">
             <div class="row">
@@ -68,9 +80,11 @@
                         <img id="cardImage" class='card-img-top profilpic'
                             src='./Images/photo profil linkdn compressed.jpg' alt=”PhotoProfil”>
                         <div id="card-body" class="card-body">
-                            <div id="cardTxt" class="card-body">
-                                Bonjour et bienvenue sur mon site. 
+                            <div id="mainDescription" class="card-body">
+                                Bonjour et bienvenue sur mon site.
+
                                 Vous trouverez ici une partie de mon travail.
+                                <br>
                                 N'hésitez pas à <a href="#contact">me contacter</a> et bonne visite !
                             </div>
                         </div>
@@ -81,11 +95,11 @@
         </section>
 
         <section id="etude" class="container netflix-slider">
-            <h2>Mes projets d'étude</h2>
+
+            <h2 id="titreEtudes">Mes projets d'études</h2>
+
             <div id="slide" class="row swiper-container">
-
                 <div id="slider" class="swiper-wrapper slider col">
-
                     <template id="templateArticle">
                         <article class="small-card ">
                             <div class="card">
@@ -106,80 +120,94 @@
                                     src='./Images/La chouette Agence - AcceuilCompressed.png' alt=”LaChouetteAgence”>
                                 <div id="card-body" class="card-body">
                                     <div id="cardTxt" class="card-body">
-                                        <span class="cardName">La chouette Agence</span><span class="cardDescription"> - Mission de réaménagement du site (principalement Front)pouramélioration SEO, performance et accéssibilité.</span>
+                                        <span class="cardName">La chouette Agence</span><span
+                                            id="descriptionLaChouetteAgence" class="cardDescription">Mission de
+                                            réaménagement du site pour amélioration SEO, performance et
+                                            accessibilité.</span>
                                     </div>
                                 </div>
+                            </div>
                         </a>
-                </div>
-                </article>
-                <article id="orinoco" class="swiper-slide small-card sliderCase">
-                    <a href="https://github.com/YoshiOnly/FrontEndProject5">
-                        <div class="card">
-                            <img id="cardImage" class='card-img-top' src='./Images/Orinoco AcceuilCompressed.png'
-                                alt=”Orinoco”>
-                            <div id="card-body" class="card-body">
-                                <div id="cardTxt" class="card-body">
-                                    <span class="cardName">Orinoco</span> <span class="cardDescription">- Mission de mise en place Front-end en fonction de l'API Rest sur un site
-                                    de vente de Peluche</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                <article id="reservia" class="swiper-slide small-card sliderCase">
-                    <a href="https://github.com/YoshiOnly/Projet-2">
-                        <div class="card">
-                            <img id="cardImage" class='card-img-top' src='./Images/Reservia AcceuilCompressed.png'
-                                alt=”reservia”>
-                            <div id="card-body" class="card-body">
-                                <div id="cardTxt" class="card-body">
-                                    <span class="cardName">Reservia</span> <span class="cardDescription">- Mission de mise en place Front-end pour un site de reservation de
-                                    logement sur base Maquette</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                <article id="hotTakes" class="swiper-slide small-card sliderCase">
-                    <a href="https://github.com/YoshiOnly/Back-endProjet6">
-                        <div class="card">
-                            <img id="cardImage" class='card-img-top' src='./Images/Hot TakesCompressed.png'
-                                alt=”HotTakes”>
-                            <div id="card-body" class="card-body">
-                                <div id="cardTxt" class="card-body">
-                                    <span class="cardName">Hot takes</span> <span class="cardDescription">- Mission de mise en place Back-end sur site de notation de sauces
-                                    piquantes</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-                <article id="groupomania" class="swiper-slide small-card sliderCase">
-                    <a href="https://github.com/YoshiOnly/Projet_7_Front-End">
-                        <div class="card">
-                            <img id="cardImage" class='card-img-top' src='./Images/Groupomania AcceuilCompressed.png'
-                                alt=”Groupomania”>
-                            <div id="card-body" class="card-body">
-                                <div id="cardTxt" class="card-body">
-                                    <span class="cardName">Groupomania</span> <span class="cardDescription">- Mission Full-stack de messagerie d'entreprise</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
+                    </article>
 
-            </div>
-            <div id="leftSliderButton" class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
-            <div id="rightSliderButton" class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                    <article id="orinoco" class="swiper-slide small-card sliderCase">
+                        <a href="https://github.com/YoshiOnly/FrontEndProject5">
+                            <div class="card">
+                                <img id="cardImage" class='card-img-top' src='./Images/Orinoco AcceuilCompressed.png'
+                                    alt=”Orinoco”>
+                                <div id="card-body" class="card-body">
+                                    <div id="cardTxt" class="card-body">
+                                        <span class="cardName">Orinoco</span> <span id="descriptionOrinoco"
+                                            class="cardDescription">Mission de mise en place Front-end en fonction de
+                                            l'API Rest sur un site
+                                            de vente de Peluche</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article id="reservia" class="swiper-slide small-card sliderCase">
+                        <a href="https://github.com/YoshiOnly/Projet-2">
+                            <div class="card">
+                                <img id="cardImage" class='card-img-top' src='./Images/Reservia AcceuilCompressed.png'
+                                    alt=”reservia”>
+                                <div id="card-body" class="card-body">
+                                    <div id="cardTxt" class="card-body">
+                                        <span class="cardName">Reservia</span> <span id="descriptionReservia"
+                                            class="cardDescription">Mission de mise en place Front-end pour un site de
+                                            reservation de
+                                            logement sur base Maquette</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article id="hotTakes" class="swiper-slide small-card sliderCase">
+                        <a href="https://github.com/YoshiOnly/Back-endProjet6">
+                            <div class="card">
+                                <img id="cardImage" class='card-img-top' src='./Images/Hot TakesCompressed.png'
+                                    alt=”HotTakes”>
+                                <div id="card-body" class="card-body">
+                                    <div id="cardTxt" class="card-body">
+                                        <span class="cardName">Hot takes</span> <span id="descriptionHotTakes"
+                                            class="cardDescription">Mission de mise en place Back-end sur site de
+                                            notation de sauces
+                                            piquantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article id="groupomania" class="swiper-slide small-card sliderCase">
+                        <a href="https://github.com/YoshiOnly/Projet_7_Front-End">
+                            <div class="card">
+                                <img id="cardImage" class='card-img-top'
+                                    src='./Images/Groupomania AcceuilCompressed.png' alt=”Groupomania”>
+                                <div id="card-body" class="card-body">
+                                    <div id="cardTxt" class="card-body">
+                                        <span class="cardName">Groupomania</span> <span id="descriptionGroupomania"
+                                            class="cardDescription">Mission Full-stack de messagerie d'entreprise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+                <div id="leftSliderButton" class="swiper-button-prev"></div>
+                <div id="rightSliderButton" class="swiper-button-next"></div>
 
             </div>
 
         </section>
 
-        <section id="perso" class="container">
-            <h2>Mes projets personnels</h2>
-            <div class="row">
-                <div id="" class="col flex">
+        <section id="perso" class="container netflix-slider">
+
+            <h2 id="titrePerso">Mes projets personnels</h2>
+
+            <div id="slide" class="row swiper-container">
+                <div id="slider" class="swiper-wrapper slider col">
+
                     <template id="templateArticle">
                         <article class="small-card">
                             <div class="card">
@@ -192,29 +220,59 @@
                             </div>
                         </article>
                     </template>
-                    <article id="noiroroo" class="small-card">
+
+                    <article id="noiroroo" class="swiper-slide small-card sliderCase">
                         <a href="https://sites.google.com/site/noiroroo/home">
                             <div class="card">
                                 <img id="cardImage" class='card-img-top' src='./Images/Noiroroo ACCEUILCompressed.png'
                                     alt=”Noiroroo”>
                                 <div id="card-body" class="card-body">
                                     <div id="cardTxt" class="card-body">
-                                        <span class="cardName">Noiroroo</span> <span class="cardDescription">- Site de Jeu de Role papier réalisé en googlesite</span>
+                                        <span class="cardName">Noiroroo</span> <span id="descriptionNoiroroo"
+                                            class="cardDescription">Site de Jeu de Rôle papier réalisé en
+                                            googlesite</span>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </article>
-                    <article id="" class="small-card">
+
+                    <article id="" class="swiper-slide small-card sliderCase">
                         <div class="card">
                             <img id="cardImage" class='card-img-top' src='' alt=””>
                             <div id="card-body" class="card-body">
                                 <div id="cardTxt" class="card-body">
-                                    <span class="cardName">Site de coaching</span> <span class="cardDescription">- Work In progress</span>
+                                    <span class="cardName">Site de coaching</span> <span class="cardDescription">Work In
+                                        progress</span>
                                 </div>
                             </div>
                         </div>
                     </article>
+
+                    <article id="null" class="swiper-slide small-card sliderCase">
+                        <div class="card">
+                            <img id="cardImage" class='card-img-top' src='' alt=””>
+                            <div id="card-body" class="card-body">
+                                <div id="cardTxt" class="card-body">
+                                    <span class="cardName">Site de coaching</span> <span class="cardDescription">Work In
+                                        progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article id="null" class="swiper-slide small-card sliderCase">
+                        <div class="card">
+                            <img id="cardImage" class='card-img-top' src='' alt=””>
+                            <div id="card-body" class="card-body">
+                                <div id="cardTxt" class="card-body">
+                                    <span class="cardName">Site de coaching</span> <span class="cardDescription">Work In
+                                        progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
             </div>
         </section>
